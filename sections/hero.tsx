@@ -52,10 +52,13 @@ export function Hero() {
 
         <motion.h1
           variants={fadeUp}
-          className="max-w-4xl text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl xl:text-8xl"
+          className="max-w-5xl text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl xl:text-8xl"
         >
-          <span className="text-gradient-gold">Engineering</span> Intelligent
-          Digital Ecosystems
+          <span className="text-gradient-jade">
+            AI-Powered Software, ERP & Enterprise
+            <br />
+            Platforms for Modern Businesses
+          </span>
         </motion.h1>
 
         <motion.p

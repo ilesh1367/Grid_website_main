@@ -7,7 +7,21 @@ import { staggerContainer, fadeUp } from '@/animations/variants'
 
 export function Industries() {
   return (
-    <section id="industries" className="relative py-28 sm:py-36">
+    <section id="industries" className="relative overflow-hidden py-28 sm:py-36">
+      {/* rotating gradient orb backdrop */}
+      <motion.div
+        aria-hidden="true"
+        className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[560px] w-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-jade/10 blur-[120px]"
+        animate={{ rotate: 360 }}
+        transition={{ duration: 60, repeat: Infinity, ease: 'linear' }}
+      />
+
+      {/* faint network-grid backdrop */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07] [background-image:radial-gradient(circle,theme(colors.jade)_1px,transparent_1px)] [background-size:28px_28px]"
+      />
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Industries"
@@ -35,8 +49,10 @@ export function Industries() {
                 aria-hidden="true"
               />
               <div className="relative flex items-start justify-between">
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-background text-jade-bright">
-                  <industry.icon className="h-7 w-7" strokeWidth={1.5} />
+                <div className="relative inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-background text-jade-bright transition-colors group-hover:border-jade/50">
+                  {/* icon glow ring on hover */}
+                  <span className="pointer-events-none absolute inset-0 rounded-2xl bg-jade/20 blur-md opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                  <industry.icon className="relative h-7 w-7" strokeWidth={1.5} />
                 </div>
               </div>
               <h3 className="relative mt-6 text-xl font-semibold">{industry.name}</h3>

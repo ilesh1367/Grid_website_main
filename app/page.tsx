@@ -9,12 +9,13 @@ import { TechStack } from '@/sections/tech-stack'
 import { Partnerships } from '@/sections/partnerships'
 import { FeaturedProjects } from '@/sections/featured-projects'
 import { FinalCTA } from '@/sections/final-cta'
-import { IntroAnimation } from '@/components/intro-animation'   // 👈 add this
+import { IntroAnimation } from '@/components/intro-animation'
+import Contact  from '@/sections/contact';
 
 export default function Home() {
   return (
     <>
-    <IntroAnimation logoSrc="/logo1-transparent.png" brandName="GridSphere" />
+      <IntroAnimation logoSrc="/logo1-transparent.png" brandName="GridSphere" />
       <Navbar />
       <main className="relative bg-background">
         <Hero />
@@ -25,6 +26,7 @@ export default function Home() {
         <TechStack />
         <Partnerships />
         <FeaturedProjects />
+        <Contact />
         <FinalCTA />
       </main>
       <Footer />

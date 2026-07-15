@@ -4,7 +4,7 @@ import { Mail, Globe, MessageCircle } from 'lucide-react'
 import { navLinks } from '@/data/content'
 
 const socials = [
-  { icon: Mail, href: 'mailto:hello@gridsphere.in', label: 'Email' },
+  { icon: Mail, href: 'mailto:info@gridsphere.in', label: 'Email' },
   { icon: MessageCircle, href: '#', label: 'Chat' },
   { icon: Globe, href: '#', label: 'Website' },
 ]
@@ -25,7 +25,7 @@ export function Footer() {
             </span>
           </a>
           <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Engineering intelligent digital ecosystems — AI products, ERP systems,
+            AI-Powered Software, ERP & Enterprise Platforms for Modern Businesses — AI products, ERP systems,
             enterprise software and next-generation platforms.
           </p>
           <div className="flex items-center gap-3 pt-2">
@@ -66,8 +66,8 @@ export function Footer() {
           </h3>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             <li>
-              <a href="mailto:hello@gridsphere.in" className="transition-colors hover:text-jade-bright">
-                hello@gridsphere.in
+              <a href="mailto:info@gridsphere.in" className="transition-colors hover:text-jade-bright">
+                info@gridsphere.in
               </a>
             </li>
             <li>Noida, India</li>
@@ -78,7 +78,7 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-muted-foreground sm:flex-row lg:px-8">
           <span>© {new Date().getFullYear()} GridSphere. All rights reserved.</span>
-          <span>Engineering Intelligent Digital Ecosystems</span>
+          <span> AI-Powered Software, ERP & Enterprise Platforms for Modern Businesses</span>
         </div>
       </div>
     </footer>
