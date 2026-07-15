@@ -21,15 +21,15 @@ export interface Metric {
   label: string
   value: number
   suffix?: string
+  isText?: boolean
 }
 
 export const metrics: Metric[] = [
-  { label: 'Projects Delivered', value: 120, suffix: '+' },
-  { label: 'Industries Served', value: 14, suffix: '+' },
-  { label: 'Products Built', value: 25, suffix: '+' },
-  { label: 'Technologies Used', value: 40, suffix: '+' },
+  { label: 'Projects Delivered', value: 100, suffix: '+' },
+  { label: 'Enterprise Clients', value: 30, suffix: '+' },
+  { label: 'Industries Served', value: 15, suffix: '+' },
+  { label: 'AI-Driven Solutions', value: 0, suffix: '', isText: true },
 ]
-
 /* --------------------------------- Services --------------------------------- */
 export interface Service {
   title: string
@@ -228,8 +228,9 @@ export const projects: Project[] = [
 
 /* --------------------------------- Nav links -------------------------------- */
 export const navLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Products', href: '#products' },
-  { label: 'Industries', href: '#industries' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Products', href: '/#products' },
+  { label: 'Industries', href: '/#industries' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'About', href: '/about' },
 ]

@@ -38,8 +38,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#05100a',
+  colorScheme: 'light',
+  themeColor: '#f7f3e8',
 }
 
 export default function RootLayout({
@@ -48,7 +48,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} bg-background`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${spaceGrotesk.variable} bg-background theme-light`}
+    >
       <body className="font-sans antialiased">
         <SmoothScroll>{children}</SmoothScroll>
         {process.env.NODE_ENV === 'production' && <Analytics />}

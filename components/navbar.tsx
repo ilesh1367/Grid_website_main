@@ -55,7 +55,7 @@ export function Navbar() {
 
         <a
           href="#contact"
-          className="hidden rounded-full bg-jade px-5 py-2.5 text-sm font-medium text-jade-foreground transition-colors hover:bg-jade-bright md:inline-flex"
+          className="hidden rounded-full bg-gold px-5 py-2.5 text-sm font-medium text-gold-foreground transition-colors hover:bg-gold-bright md:inline-flex"
         >
           Get in touch
         </a>
@@ -93,7 +93,7 @@ export function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-1 rounded-xl bg-jade px-4 py-3 text-center text-sm font-medium text-jade-foreground"
+                className="mt-1 rounded-xl bg-gold px-4 py-3 text-center text-sm font-medium text-gold-foreground"
               >
                 Get in touch
               </a>

@@ -2,10 +2,10 @@
 
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import { AnimatedBackground } from '@/components/animated-background'
 import { MagneticButton } from '@/components/magnetic-button'
 import { staggerContainer, fadeUp } from '@/animations/variants'
+import { ArrowRight, ArrowUpRight, Check } from 'lucide-react'
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null)
@@ -25,7 +25,7 @@ export function Hero() {
       <div className="absolute inset-0 grid-lines opacity-60" aria-hidden="true" />
       <AnimatedBackground />
       <div
-        className="pointer-events-none absolute left-1/2 top-1/3 h-[38rem] w-[38rem] -translate-x-1/2 rounded-full bg-jade/10 blur-[120px]"
+        className="pointer-events-none absolute left-1/2 top-1/3 h-[38rem] w-[38rem] -translate-x-1/2 rounded-full bg-gold/10 blur-[120px]"
         aria-hidden="true"
       />
       <div
@@ -44,7 +44,7 @@ export function Hero() {
           variants={fadeUp}
           className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/50 px-4 py-1.5 backdrop-blur-sm"
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-jade-bright" />
+          <span className="h-1.5 w-1.5 rounded-full bg-gold-bright" />
           <span className="text-xs tracking-wide text-muted-foreground">
             Software · AI · Enterprise Platforms
           </span>
@@ -54,7 +54,7 @@ export function Hero() {
           variants={fadeUp}
           className="max-w-4xl text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl xl:text-8xl"
         >
-          <span className="text-gradient-jade">Engineering</span> Intelligent
+          <span className="text-gradient-gold">Engineering</span> Intelligent
           Digital Ecosystems
         </motion.h1>
 
@@ -76,6 +76,25 @@ export function Hero() {
             <ArrowUpRight className="h-4 w-4" />
           </MagneticButton>
         </motion.div>
+
+        <motion.div
+          variants={fadeUp}
+          className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3"
+        >
+          {[
+            '100+ Projects Delivered',
+            '30+ Enterprise Clients',
+            '15+ Industries Served',
+            'AI-Driven Solutions',
+          ].map((item) => (
+            <div key={item} className="flex items-center gap-2">
+              <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-gold/20 text-gold-bright">
+                <Check className="h-3.5 w-3.5" strokeWidth={2.5} />
+              </span>
+              <span className="text-sm text-muted-foreground">{item}</span>
+            </div>
+          ))}
+        </motion.div>
       </motion.div>
 
       <motion.div
@@ -89,7 +108,7 @@ export function Hero() {
         </span>
         <span className="relative h-10 w-px overflow-hidden bg-border">
           <motion.span
-            className="absolute inset-x-0 top-0 h-4 bg-jade-bright"
+            className="absolute inset-x-0 top-0 h-4 bg-gold-bright"
             animate={{ y: [-16, 40] }}
             transition={{ duration: 1.6, repeat: Infinity, ease: 'easeInOut' }}
           />
