@@ -45,7 +45,7 @@ export function FinalCTA() {
         </motion.p>
 
         <motion.div variants={fadeUp} className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <MagneticButton href="mailto:hello@gridsphere.in">
+          <MagneticButton href="mailto:info@gridsphere.in">
             Start a project
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </MagneticButton>

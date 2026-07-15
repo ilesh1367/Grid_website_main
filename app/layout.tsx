@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'GridSphere — Engineering Intelligent Digital Ecosystems',
+  title: 'GridSphere — AI-Powered Software, ERP & Enterprise Platforms for Modern Businesses',
   description:
     'GridSphere builds AI products, ERP systems, enterprise software, tracking solutions and next-generation digital platforms.',
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     'digital platforms',
   ],
   openGraph: {
-    title: 'GridSphere — Engineering Intelligent Digital Ecosystems',
+    title: 'GridSphere — AI-Powered Software, ERP & Enterprise Platforms for Modern Businesses',
     description:
       'AI products, ERP systems, enterprise software and next-generation digital platforms.',
     type: 'website',
